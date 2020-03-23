@@ -3,9 +3,13 @@ let inp = document.querySelector('#inp');
 function http(){
 	alert('Проверка на http и https. Ответ: '+/^http:|^https:/.test(inp.value));
 }
+
 function jpg(){
 	alert('Проверка на jpg и jpeg. Ответ: '+/\.jpg$|\.jpeg$/.test(inp.value));
 }
+
+// проверка на длину /^\d{1,12}$/
+
 function twelve(){
 	alert('Проверка на длину числа. Ответ: '+(inp.value.length > 0 && inp.value.length < 12 &&/^\d+$/.test(inp.value)));
 }
